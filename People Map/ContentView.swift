@@ -8,12 +8,38 @@
 import SwiftUI
 import MapKit
 
+struct AnnotationItem: Identifiable {
+    let id = UUID()
+    let locationName: String
+    let personName: String
+    let latitude: Double
+    let longitude: Double
+}
+
 struct ContentView: View {
-    @State var region = MKCoordinateRegion(center:CLLocationCoordinate2D(latitude: 39.828494188286946, longitude: -98.5794689734475), latitudinalMeters: 7500000, longitudinalMeters: 7500000)
+    
+    @State private var peopleList: [AnnotationItem] = []
     
     var body: some View {
-        Map(coordinateRegion: $region)
-            .ignoresSafeArea()
+        TabView {
+            MapView(peopleList: $peopleList)
+                .tabItem {
+                    Image(systemName: "map")
+                    Text("Map")
+                }
+            
+            AddView(peopleList: $peopleList)
+                .tabItem {
+                    Image(systemName: "plus.circle.fill")
+                    Text("Add")
+                }
+            
+            ListView(peopleList: $peopleList)
+                .tabItem {
+                    Image(systemName: "list.clipboard")
+                    Text("List")
+                }
+        }
     }
 }
 

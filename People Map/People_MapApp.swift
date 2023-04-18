@@ -11,7 +11,7 @@ import SwiftUI
 struct People_MapApp: App {
     var body: some Scene {
         WindowGroup {
-            MapAnnotations(peopleList: [])
+            ContentView()
         }
     }
 }

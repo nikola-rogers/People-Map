@@ -7,22 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB207CD729E8752300FEAF4A /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB207CD629E8752300FEAF4A /* AddView.swift */; };
+		AB207CD929E8760E00FEAF4A /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB207CD829E8760E00FEAF4A /* ListView.swift */; };
+		AB207CDB29E8764E00FEAF4A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB207CDA29E8764E00FEAF4A /* MapView.swift */; };
 		AB81F25429DCB98C00D1551B /* People_MapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB81F25329DCB98C00D1551B /* People_MapApp.swift */; };
-		AB81F25629DCB98C00D1551B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB81F25529DCB98C00D1551B /* ContentView.swift */; };
 		AB81F25829DCB98D00D1551B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB81F25729DCB98D00D1551B /* Assets.xcassets */; };
 		AB81F25B29DCB98D00D1551B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB81F25A29DCB98D00D1551B /* Preview Assets.xcassets */; };
-		AB81F26429DCC46F00D1551B /* MapAnnotations.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB81F26329DCC46F00D1551B /* MapAnnotations.swift */; };
-		ABC8BED329E45EF4002C91FA /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC8BED229E45EF4002C91FA /* TabBar.swift */; };
+		AB81F26429DCC46F00D1551B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB81F26329DCC46F00D1551B /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB207CD629E8752300FEAF4A /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		AB207CD829E8760E00FEAF4A /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		AB207CDA29E8764E00FEAF4A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		AB81F25029DCB98C00D1551B /* People Map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "People Map.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB81F25329DCB98C00D1551B /* People_MapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People_MapApp.swift; sourceTree = "<group>"; };
-		AB81F25529DCB98C00D1551B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AB81F25729DCB98D00D1551B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB81F25A29DCB98D00D1551B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		AB81F26329DCC46F00D1551B /* MapAnnotations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotations.swift; sourceTree = "<group>"; };
-		ABC8BED229E45EF4002C91FA /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		AB81F26329DCC46F00D1551B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,12 +57,13 @@
 		AB81F25229DCB98C00D1551B /* People Map */ = {
 			isa = PBXGroup;
 			children = (
-				AB81F26329DCC46F00D1551B /* MapAnnotations.swift */,
+				AB207CDA29E8764E00FEAF4A /* MapView.swift */,
+				AB207CD629E8752300FEAF4A /* AddView.swift */,
+				AB207CD829E8760E00FEAF4A /* ListView.swift */,
+				AB81F26329DCC46F00D1551B /* ContentView.swift */,
 				AB81F25329DCB98C00D1551B /* People_MapApp.swift */,
-				AB81F25529DCB98C00D1551B /* ContentView.swift */,
 				AB81F25729DCB98D00D1551B /* Assets.xcassets */,
 				AB81F25929DCB98D00D1551B /* Preview Content */,
-				ABC8BED229E45EF4002C91FA /* TabBar.swift */,
 			);
 			path = "People Map";
 			sourceTree = "<group>";
@@ -143,9 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB81F26429DCC46F00D1551B /* MapAnnotations.swift in Sources */,
-				AB81F25629DCB98C00D1551B /* ContentView.swift in Sources */,
-				ABC8BED329E45EF4002C91FA /* TabBar.swift in Sources */,
+				AB207CDB29E8764E00FEAF4A /* MapView.swift in Sources */,
+				AB81F26429DCC46F00D1551B /* ContentView.swift in Sources */,
+				AB207CD929E8760E00FEAF4A /* ListView.swift in Sources */,
+				AB207CD729E8752300FEAF4A /* AddView.swift in Sources */,
 				AB81F25429DCB98C00D1551B /* People_MapApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
